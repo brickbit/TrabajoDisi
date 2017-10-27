@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Habimu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="myscripts.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+
+        <div class="sidebar-header">
+            <li><a href="#">Habimu</a></li>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#catalogo">Catálogo</a>
+                <ul>
+                    <li><a href="#">Salón y comedor</a></li>
+                    <li><a href="#">Cocina</a></li>
+                    <li><a href="#">Dormitorio</a></li>
+                    <li><a href="#">Exterior</a></li>
+                    <li><a href="#">Iluminación</a></li>
+                    <li><a href="#">Decoracion</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+            </li>
+            <li><a href="#aboutHabimu">Sobre nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="jumbotron">
+            <h1 class="text-center jumbo-title">Habimu</h1>
+            <p class="text-center jumbo-slogan">Siempre con las últimas tendencias y novedades en mobiliario y decoración.</p>
+        </section>
+
+
+        <section id="catalogo">
+            <h1 class="text-center">Catalogo</h1>
+            <div class="row">
+                <div class="col-sm-2 product">
+                    <img src="./asset/salon.jpg">
+                    <h2 class="text-center product-desc">Salon y comedor</h2>
+                </div>
+                <div class="col-sm-2 product">
+                    <img src="./asset/cocina.jpg">
+                    <h2 class="text-center product-desc">Cocina</h2>
+                </div>
+                <div class="col-sm-2 product">
+                    <img src="./asset/dormitorio.jpg">
+                    <h2 class="text-center product-desc">Dormitorio</h2>
+                </div>
+                <div class="col-sm-2 product">
+                    <img src="./asset/exterior.jpg">
+                    <h2 class="text-center product-desc">Exterior</h2>
+                </div>
+                <div class="col-sm-2 product">
+                    <img src="./asset/iluminacion.jpg">
+                    <h2 class="text-center product-desc">Iluminación</h2>
+                </div>
+                <div class="col-sm-2 product">
+                    <img src="./asset/decoracion.jpg">
+                    <h2 class="text-center product-desc">Decoración</h2>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="aboutHabimu">
+            <h1 class="text-center">Sobre nosotros</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+    </div>
+</div>
+<footer class="container-fluid text-center">
+    <p>Footer Text</p>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+</body>
+</html>
