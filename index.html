@@ -13,7 +13,6 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <script type="text/javascript" src="myscripts.js"></script>
 </head>
 <body>
@@ -22,25 +21,25 @@
     <nav id="sidebar">
 
         <div class="sidebar-header">
-            <li><a href="#">Habimu</a></li>
+            <li><a href="index.html">Habimu</a></li>
         </div>
 
         <ul class="list-unstyled components">
             <li>
                 <a href="#catalogo">Catálogo</a>
                 <ul>
-                    <li><a href="#">Salón y comedor</a></li>
-                    <li><a href="#">Cocina</a></li>
-                    <li><a href="#">Dormitorio</a></li>
-                    <li><a href="#">Exterior</a></li>
-                    <li><a href="#">Iluminación</a></li>
-                    <li><a href="#">Decoracion</a></li>
-                    <li><a href="#">Accesibilidad</a></li>
+                    <li><a href="salon.html">Salón y comedor</a></li>
+                    <li><a href="cocina.html">Cocina</a></li>
+                    <li><a href="dormitorio.html">Dormitorio</a></li>
+                    <li><a href="exterior.html">Exterior</a></li>
+                    <li><a href="iluminacion.html">Iluminación</a></li>
+                    <li><a href="decoración.html">Decoracion</a></li>
                 </ul>
             </li>
             <li><a href="#aboutHabimu">Sobre nosotros</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#">Login</a></li>
+            <li><a href="#">Accesibilidad</a></li>
         </ul>
     </nav>
 
@@ -69,31 +68,30 @@
         <section id="catalogo">
             <h1 class="text-center">Catalogo</h1>
             <div class="row">
-                <div class="col-sm-2 product">
-                    <img src="./asset/salon.jpg">
-                    <h2 class="text-center product-desc">Salon y comedor</h2>
+                <div class="col-sm-2 type">
+                    <img src="./asset/salon.jpg" alt="Imagen de un salón">
+                    <h2 class="text-center type-desc">Salon y comedor</h2>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/cocina.jpg">
-                    <h2 class="text-center product-desc">Cocina</h2>
+                <div class="col-sm-2 type">
+                    <img src="./asset/cocina.jpg" alt="Imagen de una cocina">
+                    <h2 class="text-center type-desc">Cocina</h2>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/dormitorio.jpg">
-                    <h2 class="text-center product-desc">Dormitorio</h2>
+                <div class="col-sm-2 type">
+                    <img src="./asset/dormitorio.jpg" alt="Imagen de un dormitorio">
+                    <h2 class="text-center type-desc">Dormitorio</h2>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/exterior.jpg">
-                    <h2 class="text-center product-desc">Exterior</h2>
+                <div class="col-sm-2 type">
+                    <img src="./asset/exterior.jpg" alt="Imagen de decoración exterior">
+                    <h2 class="text-center type-desc">Exterior</h2>
                 </div>
-                <div class="col-sm-2 product">
+                <div class="col-sm-2 type">
                     <img src="./asset/iluminacion.jpg">
-                    <h2 class="text-center product-desc">Iluminación</h2>
+                    <h2 class="text-center type-desc">Iluminación</h2>
                 </div>
-                <div class="col-sm-2 product">
+                <div class="col-sm-2 type">
                     <img src="./asset/decoracion.jpg">
-                    <h2 class="text-center product-desc">Decoración</h2>
+                    <h2 class="text-center type-desc">Decoración</h2>
                 </div>
-
             </div>
         </section>
 
@@ -103,15 +101,45 @@
             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section id="contacto" class="row">
+
+            <div class="col-sm-5">
+                <h1>Contacto</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-sm-5" id="googleMap" ></div>
+
+            <script>
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:5,
+                    };
+                    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+            </script>
         </section>
 
     </div>
 </div>
 <footer class="container-fluid text-center">
-    <p>Footer Text</p>
+    <div class="political-list">
+        <ul>
+            <li>Aviso legal</li>
+            <li>Condiciones de compra</li>
+            <li>Política de privacidad</li>
+            <li>Política de cookies</li>
+        </ul>
+    </div>
+    <div class="social-list">
+        <ul>
+            <li><a href="#"><img class="social" src="./asset/facebook.svg"></a></li>
+            <li><a href="#"><img class="social" src="./asset/gorjeo.svg"></a></li>
+            <li><a href="#"><img class="social" src="./asset/instagram.svg"></a></li>
+            <li><a href="#"><img class="social" src="./asset/pinterest.svg"></a></li>
+        </ul>
+    </div>
+
 </footer>
 
 <script type="text/javascript">
@@ -122,5 +150,7 @@
         });
     });
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4dGZmifr9ZAT2CSfYipsJs5aX1TZTKs&callback=myMap"></script>
+
 </body>
 </html>
