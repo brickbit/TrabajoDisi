@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #6f6f6f;
 }
 
 p {
@@ -14,7 +14,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: white;
 }
 
 a, a:hover, a:focus {
@@ -49,8 +49,8 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 300px;
     max-width: 300px;
-    background: whitesmoke;
-    color: black;
+    background: #444444;
+    color: #ffffff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
     z-index: 1;
@@ -66,7 +66,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: whitesmoke;
+    background: #444444;
 }
 #sidebar .sidebar-header li{
     display: block;
@@ -91,8 +91,8 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: white;
-    background: #140010;
+    color: #000000;
+    background: #eeeeee;
     width: 100%;
     margin-left: -0.2%;
     font-size: 1.5em;
@@ -104,8 +104,8 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: gray;
+    color: #000000;
+    background: #7f7f7f;
 }
 
 
@@ -151,7 +151,7 @@ ul ul a {
     margin-top: 2.8em;
 }
 .jumbo-slogan{
-    color: black;
+    color: #ffffff;
     font-size: 2em!important;
 }
 .jumbo-title-cat{
@@ -253,20 +253,20 @@ ul ul a {
 }
 
 .pagination a {
-    color: black;
+    color: #ffffff;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
 }
 
 .pagination a.active {
-    background-color: black;
-    color: white;
+    background-color: #ffffff;
+    color: black;
 }
 
 .pagination a:hover:not(.active) {
     background-color: #ddd;
-    border:solid 1px black;
+    border:solid 1px white;
 }
 
 #googleMap{
@@ -276,8 +276,8 @@ ul ul a {
 }
 
 #aboutHabimu{
-    background-color: black;
-    color: whitesmoke;
+    background-color: white;
+    color: #7f7f7f;
     width: 98%;
     margin-top: 3em;
     margin-left: -1em;
@@ -302,7 +302,7 @@ ul ul a {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: solid black 1px;
+    border: solid white 1px;
     margin-left: -5em;
     z-index: 2;
 }
@@ -312,7 +312,7 @@ ul ul a {
     height: 2px;
     margin: 0 auto;
     display: block;
-    background: #555;
+    background: #aaaaaa;
     transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
     transition-delay: 0.2s;
 }
@@ -334,8 +334,8 @@ ul ul a {
     margin: 5px auto;
 }
 footer{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     overflow: hidden;
     height: 200px;
 }

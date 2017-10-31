@@ -14,6 +14,8 @@
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="myscripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -44,7 +46,10 @@
             <li><a href="#aboutHabimu">Sobre nosotros</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#">Login</a></li>
-            <li><a href="#">Accesibilidad</a></li>
+            <li><a href="#">Modo noche</a>
+                <button class="original">I</button>
+                <button class="grayscale">O</button>
+            </li>
         </ul>
     </nav>
 
@@ -194,6 +199,14 @@
             $('#sidebar').toggleClass('active');
             $(this).toggleClass('active');
         });
+    });
+</script>
+<script>
+    $('.grayscale').click(function (){
+        $('link[href="style.css"]').attr('href','styleDark.css');
+    });
+    $('.original').click(function (){
+        $('link[href="styleDark.css"]').attr('href','style.css');
     });
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4dGZmifr9ZAT2CSfYipsJs5aX1TZTKs&callback=myMap"></script>
