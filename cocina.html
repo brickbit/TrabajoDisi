@@ -39,10 +39,14 @@
             <li><a href="exterior.html">Exterior</a></li>
             <li><a href="iluminacion.html">Iluminación</a></li>
             <li><a href="decoración.html">Decoracion</a></li>
-            <li><a href="#aboutHabimu">Sobre nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html#aboutHabimu">Sobre nosotros</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
             <li><a href="#">Login</a></li>
-            <li><a href="#">Accesibilidad</a></li>
+            <li><a href="#">Modo noche</a></li>
+            <li class="switch">
+                <a class="grayscale on"></a>
+                <a class="original off"></a>
+            </li>
         </ul>
     </nav>
 
@@ -192,6 +196,14 @@
             $('#sidebar').toggleClass('active');
             $(this).toggleClass('active');
         });
+    });
+</script>
+<script>
+    $('.grayscale').click(function (){
+        $('link[href="style.css"]').attr('href','styleDark.css');
+    });
+    $('.original').click(function (){
+        $('link[href="styleDark.css"]').attr('href','style.css');
     });
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4dGZmifr9ZAT2CSfYipsJs5aX1TZTKs&callback=myMap"></script>

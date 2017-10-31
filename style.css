@@ -93,13 +93,9 @@ a, a:hover, a:focus {
 #sidebar ul li a:hover {
     color: white;
     background: #140010;
-    width: 100%;
-    margin-left: -0.2%;
     font-size: 1.5em;
 }
 #sidebar ul li ul li a:hover {
-    margin-left: -0.2%;
-    width: 104%;
     font-size: 1.3em!important;
 }
 
@@ -128,6 +124,43 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
+}
+.switch {
+    position: relative !important;
+    display: inline-block;
+    left:10em !important;
+    top:-2.2em !important;
+    width: 60px;
+    height: 30px;
+    background-color: #7f7f7f;
+    border-radius: 30px;
+}
+.on{
+    position: relative;
+    top: 3px;
+    left: -15px;
+    width: 24px;
+    height: 24px;
+    border-radius: 26px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+}
+.on:hover{
+    background-color: lightgray!important;
+    font-size: 1.1em!important;
+
+}
+.on:active{
+    border: none;
+}
+.off{
+   display: none!important;
+}
+.off:hover{
+    display: none!important;
 }
 
 
@@ -230,6 +263,7 @@ ul ul a {
     margin-top: 2em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    background-color: whitesmoke;
 }
 .product-desc{
     margin-top: 0.4em;
@@ -237,9 +271,9 @@ ul ul a {
     padding: 2px 16px;
 }
 .product img{
-    width: 114%;
+    width: 117%;
     height: 12em;
-    margin-left: -7%;
+    margin-left: -9%;
 }
 .product:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -342,8 +376,8 @@ footer{
 .political-list ul{
     list-style-type: none;
     display: block;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 .political-list ul li{
     float: left;
@@ -355,8 +389,8 @@ footer{
 .social-list ul{
     list-style-type: none;
     display: block;
-    margin-left: 36%;
-    margin-right: 36%;
+    margin-left: 32%;
+    margin-right: 32%;
 }
 .social-list ul li a{
     float: left;
