@@ -68,7 +68,7 @@
                 <a class="grayscale on"></a>
                 <a class="original off"></a>
             </li>
-            <li><a href="login.html">Login</a><img class="icon" src="./asset/padlock.svg"></li>
+            <li><a id = "login" href="login.html">Login</a><img class="icon" src="./asset/padlock.svg"></li>
         </ul>
     </nav>
     <!-- ##################################### NAVBAR LATERAL IZQUIERDA FIN ############################################# -->
@@ -89,14 +89,14 @@
     <!-- ############################################# PORTADA ##################################################### -->
 
         <section class="jumbotron">
-            <h1 class="text-center jumbo-title">Habimu</h1>
+            <a href="index.html" class="text-center jumbo-title">Habimu</a>
         </section>
 
-        <!-- ############################################# PORTADA ##################################################### -->
-        <section id="catalogo">
-            <h1 class="text-center">Catálogo</h1>
+        <!-- ############################################# DESTACADO ##################################################### -->
+        <section id="destacado">
+            <h1 class="text-center">Destacado</h1>
             <div class="row">
-                <div class="col-sm-3 type">
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
                     <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
                     <h2 class="type-desc">Salon y comedor</h2>
                     <a class="tag referencia">REF: SH003</a>
@@ -107,7 +107,7 @@
                     <a class="tag familia">LEHRMAN</a>
                     <a class="precio">29€</a>
                 </div>
-                <div class="col-sm-3 type">
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
                     <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
                     <h2 class="type-desc">Salon y comedor</h2>
                     <a class="tag referencia">REF: SH003</a>
@@ -118,7 +118,7 @@
                     <a class="tag familia">LEHRMAN</a>
                     <a class="precio">29€</a>
                 </div>
-                <div class="col-sm-3 type">
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
                     <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
                     <h2 class="type-desc">Salon y comedor</h2>
                     <a class="tag referencia">REF: SH003</a>
@@ -129,7 +129,7 @@
                     <a class="tag familia">LEHRMAN</a>
                     <a class="precio">29€</a>
                 </div>
-                <div class="col-sm-3 type">
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
                     <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
                     <h2 class="type-desc">Salon y comedor</h2>
                     <a class="tag referencia">REF: SH003</a>
@@ -140,7 +140,7 @@
                     <a class="tag familia">LEHRMAN</a>
                     <a class="precio">29€</a>
                 </div>
-                <div class="col-sm-3 type">
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
                     <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
                     <h2 class="type-desc">Salon y comedor</h2>
                     <a class="tag referencia">REF: SH003</a>
@@ -151,7 +151,7 @@
                     <a class="tag familia">LEHRMAN</a>
                     <a class="precio">29€</a>
                 </div>
-                <div class="col-sm-3 type">
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
                     <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
                     <h2 class="type-desc">Salon y comedor</h2>
                     <a class="tag referencia">REF: SH003</a>
@@ -165,6 +165,7 @@
             </div>
         </section>
 
+        <!-- ############################################# SOBRE NOSOTROS ##################################################### -->
 
         <section id="aboutHabimu">
             <h1 class="text-center">Sobre nosotros</h1>
@@ -189,6 +190,9 @@
             </div>
             <div class="col-sm-5" id="googleMap" ></div>
         </section>
+
+        <!-- ############################################# FOOTER ##################################################### -->
+
         <footer class="container-fluid text-center">
             <div class="political-list">
                 <ul>
@@ -209,6 +213,8 @@
         </footer>
     </div>
 </div>
+
+<!-- ############################################# SCRIPT ##################################################### -->
 
 <script>
     function myMap() {
