@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Habimu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="./asset/livingroom-black-double-sofa.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="myscripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+<div class="wrapper">
+    <!-- ####################################### NAVBAR LATERAL IZQUIERDA ############################################### -->
+    <nav id="sidebar">
+
+        <div class="sidebar-header">
+            <li><a href="index.html">Habimu</a></li>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li><a href="miCompra.html">Mi compra</a><img class="icon" src="./asset/shopping-cart.svg"></li>
+            <li>
+                <form class="searchBox">
+                    <input type="search" name="search" placeholder="Buscar muebles...">
+                </form>
+            </li>
+            <li>
+                <a href="catalogo.html">Catálogo</a>
+                <ul>
+                    <li><a href="catalogo.html#estancias">Estancias</a>
+                        <ul>
+                            <li><a href="salon.html">Salón y comedor</a></li>
+                            <li><a href="cocina.html">Cocina</a></li>
+                            <li><a href="dormitorio.html">Dormitorio</a></li>
+                            <li><a href="exterior.html">Exterior</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="catalogo.html#elementos">Elementos</a>
+                        <ul>
+                            <li><a href="mesaSillas.html">Mesas y sillas</a></li>
+                            <li><a href="sillonesSofa.html">Sillones y sofás</a></li>
+                            <li><a href="camas.html">Camas</a></li>
+                            <li><a href="mesillasComodas.html">Mesillas y cómodas</a></li>
+                            <li><a href="mueblesAux.html">Muebles auxiliares</a></li>
+                            <li><a href="iluminacion.html">Iluminación</a></li>
+                            <li><a href="decoración.html">Decoración</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#aboutHabimu">Sobre nosotros</a></li>
+            <li><a href="muebleRA.html">Tu mueble en RA</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a >Modo noche</a></li>
+            <li class="switch">
+                <a class="grayscale on"></a>
+                <a class="original off"></a>
+            </li>
+            <li><a id = "login" href="login.html">Login</a><img class="icon" src="./asset/padlock.svg"></li>
+        </ul>
+    </nav>
+    <!-- ##################################### NAVBAR LATERAL IZQUIERDA FIN ############################################# -->
+
+
+    <!-- ############################################# NAVBAR BOTÓN ##################################################### -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        </nav>
+        <!-- ############################################# LOGIN ##################################################### -->
+        <form action="/backend.html">
+            <div class="imgcontainer">
+                <img src="./asset/profile.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label>Usuario</label>
+                <input type="password" placeholder="Introduzca el usuario" name="uname" required>
+
+                <label>Contraseña</label>
+                <input type="password" placeholder="Introduzca la contraseña" name="psw" required>
+
+                <button type="submit" class="loginbtn">Login</button>
+                <input type="checkbox" checked="checked"> Recuerdame
+            </div>
+
+            <div class="container">
+                <button type="button" class="cancelbtn">Cancelar</button>
+                <span class="psw">¿Olvidó la <a href="#">contraseña?</a></span>
+            </div>
+        </form>
+
+        <!-- ############################################# FOOTER ##################################################### -->
+
+        <footer class="container-fluid text-center">
+            <div class="political-list">
+                <ul>
+                    <li>Aviso legal</li>
+                    <li>Condiciones de compra</li>
+                    <li>Política de privacidad</li>
+                    <li>Política de cookies</li>
+                </ul>
+            </div>
+            <div class="social-list">
+                <ul>
+                    <li><a href="#"><img class="social" src="./asset/facebook.svg"></a></li>
+                    <li><a href="#"><img class="social" src="./asset/gorjeo.svg"></a></li>
+                    <li><a href="#"><img class="social" src="./asset/instagram.svg"></a></li>
+                    <li><a href="#"><img class="social" src="./asset/pinterest.svg"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- ############################################# SCRIPT ##################################################### -->
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+<script>
+    $('.grayscale').click(function (){
+        $('link[href="style.css"]').attr('href','styleDark.css');
+    });
+    $('.original').click(function (){
+        $('link[href="styleDark.css"]').attr('href','style.css');
+    });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4dGZmifr9ZAT2CSfYipsJs5aX1TZTKs&callback=myMap"></script>
+</body>
+</html>

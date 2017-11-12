@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="./asset/livingroom-black-double-sofa.png" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -15,10 +16,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="myscripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
+
+
 <body>
 <div class="wrapper">
-    <!-- Sidebar Holder -->
+    <!-- ####################################### NAVBAR LATERAL IZQUIERDA ############################################### -->
     <nav id="sidebar">
 
         <div class="sidebar-header">
@@ -26,173 +30,281 @@
         </div>
 
         <ul class="list-unstyled components">
-            <li><a href="salon.html">Salón y comedor</a></li>
-            <li><a href="cocina.html">Cocina</a></li>
+            <li><a href="miCompra.html">Mi compra</a><img class="icon" src="./asset/shopping-cart.svg"></li>
             <li>
-                <a href="#catalogo">Dormitorio</a>
+                <form class="searchBox">
+                    <input type="search" name="search" placeholder="Buscar muebles...">
+                </form>
+            </li>
+            <li>
+                <a href="catalogo.html">Catálogo</a>
                 <ul>
-                    <li><a href="#">Camas</a></li>
-                    <li><a href="#">Mesillas</a></li>
-                    <li><a href="#">Armarios</a></li>
-                    <li><a href="#">Escritorios</a></li>
-                    <li><a href="#">Sillas</a></li>
-                    <li><a href="#">Muebles auxiliares</a></li>
+                    <li><a href="catalogo.html#estancias">Estancias</a>
+                        <ul>
+                            <li><a href="salon.html">Salón y comedor</a></li>
+                            <li><a href="cocina.html">Cocina</a></li>
+                            <li><a href="dormitorio.html">Dormitorio</a></li>
+                            <li><a href="exterior.html">Exterior</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="catalogo.html#elementos">Elementos</a>
+                        <ul>
+                            <li><a href="mesaSillas.html">Mesas y sillas</a></li>
+                            <li><a href="sillonesSofa.html">Sillones y sofás</a></li>
+                            <li><a href="camas.html">Camas</a></li>
+                            <li><a href="mesillasComodas.html">Mesillas y cómodas</a></li>
+                            <li><a href="mueblesAux.html">Muebles auxiliares</a></li>
+                            <li><a href="iluminacion.html">Iluminación</a></li>
+                            <li><a href="decoración.html">Decoración</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
                 </ul>
             </li>
-            <li><a href="exterior.html">Exterior</a></li>
-            <li><a href="iluminacion.html">Iluminación</a></li>
-            <li><a href="decoración.html">Decoracion</a></li>
             <li><a href="index.html#aboutHabimu">Sobre nosotros</a></li>
-            <li><a href="index.html#contacto">Contacto</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Modo noche</a></li>
+            <li><a href="muebleRA.html">Tu mueble en RA</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a >Modo noche</a></li>
             <li class="switch">
                 <a class="grayscale on"></a>
                 <a class="original off"></a>
             </li>
+            <li><a id = "login" href="login.html">Login</a><img class="icon" src="./asset/padlock.svg"></li>
         </ul>
     </nav>
+    <!-- ##################################### NAVBAR LATERAL IZQUIERDA FIN ############################################# -->
 
-    <!-- Page Content Holder -->
+
+    <!-- ############################################# NAVBAR BOTÓN ##################################################### -->
     <div id="content">
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-
-                <div class="navbar-header">
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
+        </div>
         </nav>
+        <!-- ############################################# PORTADA ##################################################### -->
 
-        <section class="jumbotron" id="jumbo-dormitorio">
-            <h1 class="text-center jumbo-title-cat">Dormitorios</h1>
+        <section class="jumbotron-dormitorio">
+            <a href="index.html" class="text-center jumbo-title">Dormitorio</a>
         </section>
 
+        <!-- ############################################# DESTACADO ##################################################### -->
+        <section>
+            <div class="row filters">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <h1 class="filter">Precio máximo</h1>
+                    <div id="slidecontainer">
+                        <input type="range" min="1" max="1500" value="50" class="slider" id="myRange">
+                        <p class="val">Máximo: <span id="demo"></span></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <h1 class="filter">Familia</h1>
+                    <form action="">
+                        <ul>
+                            <li class="checklist">
+                            <li class="select"><input type="checkbox" name="mueble" value="VIMILE">VIMILE</li>
+                            <li class="select"><input type="checkbox" name="mueble" value="FARLOV">FARLOV</li>
+                            <li class="select"><input type="checkbox" name="mueble" value="KIVIK">KIVIK</li>
+                            </li>
+                            <li class="checklist">
+                            <li class="select"><input type="checkbox" name="mueble" value="GURLI">GURLI</li>
+                            <li class="select"><input type="checkbox" name="mueble" value="URSULA">URSULA</li>
+                            <li class="select"><input type="checkbox" name="mueble" value="SANELA">SANELA</li>
+                            </li>
+                        </ul>
 
-        <section id="catalogo">
-            <h1 class="text-center">Catalogo</h1>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+
             <div class="row">
-                <div class="col-sm-2 product">
-                    <img src="./asset/salon.jpg" alt="Imagen de un salón">
-                    <h2 class="text-center product-desc">Salon y comedor</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/cocina.jpg" alt="Imagen de una cocina">
-                    <h2 class="text-center product-desc">Cocina</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/dormitorio.jpg" alt="Imagen de un dormitorio">
-                    <h2 class="text-center product-desc">Dormitorio</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/exterior.jpg" alt="Imagen de decoración exterior">
-                    <h2 class="text-center product-desc">Exterior</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/iluminacion.jpg">
-                    <h2 class="text-center product-desc">Iluminación</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/decoracion.jpg">
-                    <h2 class="text-center product-desc">Decoración</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/salon.jpg" alt="Imagen de un salón">
-                    <h2 class="text-center product-desc">Salon y comedor</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/cocina.jpg" alt="Imagen de una cocina">
-                    <h2 class="text-center product-desc">Cocina</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/dormitorio.jpg" alt="Imagen de un dormitorio">
-                    <h2 class="text-center product-desc">Dormitorio</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/exterior.jpg" alt="Imagen de decoración exterior">
-                    <h2 class="text-center product-desc">Exterior</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/iluminacion.jpg">
-                    <h2 class="text-center product-desc">Iluminación</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/decoracion.jpg">
-                    <h2 class="text-center product-desc">Decoración</h2>
+                <div class="col-sm-3 col-md-4 col-lg-3 type">
+                    <a href="./salon.html"><img class="img-desc" src="./asset/salon.jpg" alt="Imagen de un salón"></a>
+                    <h1 class="type-desc">Salon y comedor</h1>
+                    <ul>
+                        <li class="desc"><a class="tag">Comprar<img class="iconc" src="./asset/shopping-cart.svg"></a></li>
+                        <li class="desc"><a class="tag referencia">REF: SH003</a> <a class="tag dimensión">48 X 109 X 43 cm</a></li>
+                        <li class="desc"><a class="oferta">OFERTA</a> <a class="tag elemento">Silla</a></li>
+                        <li class="desc"><a class="tag estancia">Salon y comedor</a> <a class="tag familia">LEHRMAN</a></li>
+                        <li class="desc"><a class="precio">29€</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/salon.jpg" alt="Imagen de un salón">
-                    <h2 class="text-center product-desc">Salon y comedor</h2>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
                 </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/cocina.jpg" alt="Imagen de una cocina">
-                    <h2 class="text-center product-desc">Cocina</h2>
-                </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/dormitorio.jpg" alt="Imagen de un dormitorio">
-                    <h2 class="text-center product-desc">Dormitorio</h2>
-                </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/exterior.jpg" alt="Imagen de decoración exterior">
-                    <h2 class="text-center product-desc">Exterior</h2>
-                </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/iluminacion.jpg">
-                    <h2 class="text-center product-desc">Iluminación</h2>
-                </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/decoracion.jpg">
-                    <h2 class="text-center product-desc">Decoración</h2>
-                </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/iluminacion.jpg">
-                    <h2 class="text-center product-desc">Iluminación</h2>
-                </div>
-                <div class="col-sm-2 product">
-                    <img src="./asset/decoracion.jpg">
-                    <h2 class="text-center product-desc">Decoración</h2>
-                </div>
-
-            </div>
-            <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a href="#">1</a>
-                <a class="active" href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">&raquo;</a>
             </div>
         </section>
+
+        <!-- ############################################# FOOTER ##################################################### -->
+
+        <footer class="container-fluid text-center">
+            <div class="political-list">
+                <ul>
+                    <li>Aviso legal</li>
+                    <li>Condiciones de compra</li>
+                    <li>Política de privacidad</li>
+                    <li>Política de cookies</li>
+                </ul>
+            </div>
+            <div class="social-list">
+                <ul>
+                    <li><a href="#"><img class="social" src="./asset/facebook.svg"></a></li>
+                    <li><a href="#"><img class="social" src="./asset/gorjeo.svg"></a></li>
+                    <li><a href="#"><img class="social" src="./asset/instagram.svg"></a></li>
+                    <li><a href="#"><img class="social" src="./asset/pinterest.svg"></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </div>
 
-<footer class="container-fluid text-center">
-    <div class="political-list">
-        <ul>
-            <li>Aviso legal</li>
-            <li>Condiciones de compra</li>
-            <li>Política de privacidad</li>
-            <li>Política de cookies</li>
-        </ul>
-    </div>
-    <div class="social-list">
-        <ul>
-            <li><a href="#"><img class="social" src="./asset/facebook.svg"></a></li>
-            <li><a href="#"><img class="social" src="./asset/gorjeo.svg"></a></li>
-            <li><a href="#"><img class="social" src="./asset/instagram.svg"></a></li>
-            <li><a href="#"><img class="social" src="./asset/pinterest.svg"></a></li>
-        </ul>
-    </div>
+<!-- ############################################# SCRIPT ##################################################### -->
 
-</footer>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
 
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebarCollapse').on('click', function () {
@@ -210,6 +322,5 @@
     });
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4dGZmifr9ZAT2CSfYipsJs5aX1TZTKs&callback=myMap"></script>
-
 </body>
 </html>
