@@ -441,11 +441,34 @@ input[type=search] {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.jumbotron-ra{
+    margin-top: -3em;
+    margin-right: -1em;
+    left: -3em;
+    position: relative;
+    z-index: 0;
+    height: 300px;
+    background-image: url("./asset/ra.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .jumbo-title{
     position: relative;
     top: 0.4em;
     font-size: 5em!important;
+    margin-left: 1em;
+    background-color: rgba(255,255,255,0.4);
+    padding: 0.2em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+.jumbo-title2{
+    position: relative;
+    top: 1.4em;
+    font-size: 3em!important;
     margin-left: 1em;
     background-color: rgba(255,255,255,0.4);
     padding: 0.2em;
@@ -586,9 +609,7 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-button {
 
-}
 
 button:hover {
     opacity: 0.8;
@@ -688,15 +709,9 @@ span.psw {
     to {transform: scale(1)}
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
+input[type=file]{
+    margin-bottom: 2em;
+    margin-left: 2em;
 }
 
 /*##################################### SOBRE NOSOTROS ####################################*/
@@ -873,8 +888,59 @@ input[type=checkbox]{
     padding: 0.5em!important;
     display: inline;
 }
+.compra-lista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+}
+#background{
+    position: relative;
+    z-index: 1;
+    background-image:url("./asset/photos.png");
+    background-size:cover;
+    background-position: center;
+    height: 60%; width: 60%;
+    border: 1px solid #bbb;
+}
+
+#mydiv {
+    top:27.5em;
+    right: 12em;
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+
+
+}
+
+#mydivheader {
+    color: black;
+    cursor: move;
+    z-index: 10;
+    height: 250px;
+    width: 250px;
+    background-size:cover;
+    background-position: center;
+    background-image:url("./asset/photos.png");
+
+
+}
+
 
 /*##################################### MEDIA QUERIES ####################################*/
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
 @media (max-width: 320px) {
     #sidebarCollapse{
         margin-left: -30px;
