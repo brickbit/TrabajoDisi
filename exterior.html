@@ -295,31 +295,7 @@
 
 <!-- ############################################# SCRIPT ##################################################### -->
 
-<script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value;
+<script type="text/javascript" src="./js/handlers.js"></script>
 
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-            $(this).toggleClass('active');
-        });
-    });
-</script>
-<script>
-    $('.grayscale').click(function (){
-        $('link[href="style.css"]').attr('href','styleDark.css');
-    });
-    $('.original').click(function (){
-        $('link[href="styleDark.css"]').attr('href','style.css');
-    });
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4dGZmifr9ZAT2CSfYipsJs5aX1TZTKs&callback=myMap"></script>
 </body>
 </html>
