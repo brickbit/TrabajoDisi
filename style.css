@@ -66,6 +66,7 @@ a, a:hover, a:focus {
     -webkit-box-shadow: 10px 0px 8px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 10px 0px 8px 0px rgba(0,0,0,0.2);
     box-shadow: 10px 0px 8px 0px rgba(0,0,0,0.2);
+    overflow: scroll;
 }
 
 #sidebar.active {
@@ -1021,7 +1022,7 @@ input[type=checkbox]{
     footer{
         width: 114%!important;
         font-size: 1em!important;
-        height: 20em;
+        height: 25em;
         margin-top: 5px;
         margin-bottom: 5px;
         left: -1.1em;
@@ -1654,6 +1655,14 @@ input[type=checkbox]{
         width: 35px;
         height: 35px;
         margin-top: -10px;
+    }
+    #content {
+        padding: 20px;
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+        height: 640px;
+        overflow: scroll;
     }
 
 }
