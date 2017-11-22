@@ -971,7 +971,51 @@ input[type=checkbox]{
     }
     .jumbotron-salon{
         height: 45%;
-        width: 125%;
+        width: 120%;
+    }
+    .jumbotron-cocina{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-dormitorio{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-exterior{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-ofertas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesaSilla{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-sillonesSofas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-camas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesillasComodas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mueblesAux{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-iluminación{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-decoracion{
+        height: 45%;
+        width: 120%;
     }
     .jumbo-title{
         font-size: 1.8em!important;
@@ -1064,12 +1108,56 @@ input[type=checkbox]{
         margin-right: -2.8em;
     }
     .jumbotron{
-        height: 45%;
+        height: 43%;
         width: 125%;
     }
     .jumbotron-salon{
-        height: 45%;
-        width: 125%;
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-cocina{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-dormitorio{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-exterior{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-ofertas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-mesaSilla{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-sillonesSofas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-camas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-mesillasComodas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-mueblesAux{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-iluminación{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-decoracion{
+        height: 43%;
+        width: 120%;
     }
     .jumbo-title{
         font-size: 2em!important;
@@ -1114,7 +1202,7 @@ input[type=checkbox]{
         width: 320px!important;
     }
     footer{
-        width: 114%!important;
+        width: 112%!important;
         font-size: 1em!important;
         height: 20em;
         margin-top: 5px;
@@ -1665,6 +1753,7 @@ input[type=checkbox]{
     }
     #content {
         height: 640px;
+        overflow: hidden;
     }
 
 }
