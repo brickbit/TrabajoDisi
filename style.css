@@ -1109,7 +1109,7 @@ input[type=checkbox]{
     }
     .jumbotron{
         height: 43%;
-        width: 125%;
+        width: 120%;
     }
     .jumbotron-salon{
         height: 43%;
@@ -1246,11 +1246,55 @@ input[type=checkbox]{
         margin-right: -2.8em;
     }
     .jumbotron{
-        height: 45%;
-        width: 120%;
+        height: 43%;
+        width: 125%;
     }
     .jumbotron-salon{
-        height: 45%;
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-cocina{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-dormitorio{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-exterior{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-ofertas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-mesaSilla{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-sillonesSofas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-camas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-mesillasComodas{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-mueblesAux{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-iluminación{
+        height: 43%;
+        width: 120%;
+    }
+    .jumbotron-decoracion{
+        height: 43%;
         width: 120%;
     }
     .jumbo-title{
