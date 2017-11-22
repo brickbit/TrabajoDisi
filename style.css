@@ -1604,7 +1604,7 @@ input[type=checkbox]{
     
 @media (max-height: 640px) {
     #sidebar {
-        max-height: 510px;
+        max-height: 640px;
     }
     #sidebar .sidebar-header {
         padding: 20px;
@@ -1664,7 +1664,7 @@ input[type=checkbox]{
         margin-top: -10px;
     }
     #content {
-        height: 510px;
+        height: 640px;
     }
 
 }
