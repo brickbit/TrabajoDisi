@@ -66,7 +66,6 @@ a, a:hover, a:focus {
     -webkit-box-shadow: 10px 0px 8px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 10px 0px 8px 0px rgba(0,0,0,0.2);
     box-shadow: 10px 0px 8px 0px rgba(0,0,0,0.2);
-    overflow: scroll;
 }
 
 #sidebar.active {
@@ -1842,7 +1841,7 @@ input[type=checkbox]{
     }
     #content {
         height: 640px;
-        overflow: hidden;
+        overflow: scroll;
     }
 
 }
