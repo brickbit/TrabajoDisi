@@ -562,6 +562,19 @@ input[type=search] {
     margin: 0.15em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+.masDetalle{
+    position: relative;
+    color: white!important;
+    background-color: black;
+    padding: 0.1em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    float: right;
+    font-size: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
 #mas{
     padding: 0.8em!important;
     padding-right: 1.4em!important;
@@ -1365,6 +1378,10 @@ input[type=checkbox]{
     .precio{
         font-size: 1.5em;
     }
+
+    .masDetalle{
+        font-size: 1.5em;
+    }
     #aboutHabimu{
         width: 104%;
     }
@@ -1472,6 +1489,9 @@ input[type=checkbox]{
         font-size: 0.8em;
     }
     .precio{
+        font-size: 1.5em;
+    }
+    .masDetalle{
         font-size: 1.5em;
     }
     #aboutHabimu{
