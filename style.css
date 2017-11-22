@@ -1570,10 +1570,12 @@ input[type=checkbox]{
         margin-left: -250px;
         transform: rotateY(90deg);
     }
+
     #sidebar.active {
         margin-left: 0;
         transform: none;
     }
+
     #sidebarCollapse span:first-of-type,
     #sidebarCollapse span:nth-of-type(2),
     #sidebarCollapse span:last-of-type {
@@ -1581,17 +1583,77 @@ input[type=checkbox]{
         opacity: 1;
         margin: 5px auto;
     }
+
     #sidebarCollapse.active span {
         margin: 0 auto;
     }
+
     #sidebarCollapse.active span:first-of-type {
         transform: rotate(45deg) translate(2px, 2px);
     }
+
     #sidebarCollapse.active span:nth-of-type(2) {
         opacity: 0;
     }
+
     #sidebarCollapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
+    }
+}
+    
+@media (max-width: 640px) {
+    #sidebar {
+        max-height: 640px;
+    }
+    #sidebar .sidebar-header {
+        padding: 20px;
+    }
+    #sidebar .sidebar-header li{
+        font-size: 2em;
+        margin-left: 0.1em;
+    }
+    #sidebar ul.components {
+        top: 2.5em;
+        padding: 10px 0;
+    }
+    #sidebar ul li a {
+        padding: 3px;
+        font-size: 0.8em;
+        margin-left: 1.8em;
+    }
+    input[type=search] {
+        left: 20px;
+        width: 180px;
+        height: 25px;
+        font-size: 10px;
+        background-size: 8%;
+        background-position: 150px 4px;
+    }
+    .switch {
+        left:10em !important;
+        top:-1.5em !important;
+        width: 40px;
+        height: 15px;
+        border-radius: 15px;
+    }
+    .on {
+        position: relative;
+        top: 2px;
+        left: -20px;
+        width: 11px;
+        height: 11px;
+    }
+    .icon{
+        width: 1.1em;
+        height: 1.1em;
+        position: relative;
+        top: -2em;
+        left: 11em;
+    }
+    #sidebarCollapse {
+        width: 35px;
+        height: 35px;
+        margin-top: -10px;
     }
 
 }
