@@ -1298,7 +1298,7 @@ input[type=checkbox]{
     }
     .jumbo-title{
         font-size: 2em!important;
-        top: 8em;
+        top: 6em;
     }
     .text-center{
         font-size: 1.6em;
@@ -1778,9 +1778,9 @@ input[type=checkbox]{
     }
 }
     
-@media (max-height: 640px) {
+@media (max-height: 510px) {
     #sidebar {
-        max-height: 640px;
+        max-height: 510px;
     }
     #sidebar .sidebar-header {
         padding: 20px;
@@ -1840,7 +1840,7 @@ input[type=checkbox]{
         margin-top: -10px;
     }
     #content {
-        height: 640px;
+        height: 510px;
         overflow: scroll;
     }
 
