@@ -781,7 +781,64 @@ input[type=text] {
     width: 100%;
     height: 400px;
 }
-
+.eliminar{
+    text-align: center;
+    background-color: red;
+    font-size: 2em;
+    color: white!important;
+    margin-left: -0.6em;
+    margin-top: 0.4em;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.lc{
+    color: #999;
+}
+.type-compra{
+    margin-left: 6em;
+    margin-top: 1em;
+    width: 100%;
+    height: 650px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.desp{
+    background-color: white!important;
+    color: black!important;
+    border: 1px solid black!important;
+    float: right;
+    border-radius: 0px;
+    margin-top: -2em;
+}
+.uds{
+    margin-top: 1em;
+}
+.fincompra{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.compre-elem{
+    padding: 14px 16px;
+    float: right;
+    display: block;
+    margin-top: -3%;
+}
+.sub{
+    border: black 1px solid;
+    margin-left: 5px;
+}
+.boton{
+    padding: 20px 25px;
+    color: white;
+}
+.img-desc2{
+    width: 30%;
+    height: 30%;
+}
 /*##################################### FOOTER ####################################*/
 
 footer{
@@ -887,6 +944,7 @@ footer{
     margin-top: 1em;
 }
 
+
 .checklist {
     position: relative;
     margin-right: 2em;
@@ -971,6 +1029,50 @@ input[type=checkbox]{
     .jumbotron-salon{
         height: 45%;
         width: 125%;
+    }
+    .jumbotron-cocina{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-dormitorio{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-exterior{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-ofertas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesaSilla{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-sillonesSofas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-camas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesillasComodas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mueblesAux{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-iluminación{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-decoracion{
+        height: 45%;
+        width: 120%;
     }
     .jumbo-title{
         font-size: 1.8em!important;
@@ -1069,6 +1171,49 @@ input[type=checkbox]{
     .jumbotron-salon{
         height: 45%;
         width: 125%;
+    }    .jumbotron-cocina{
+             height: 45%;
+             width: 120%;
+         }
+    .jumbotron-dormitorio{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-exterior{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-ofertas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesaSilla{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-sillonesSofas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-camas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesillasComodas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mueblesAux{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-iluminación{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-decoracion{
+        height: 45%;
+        width: 120%;
     }
     .jumbo-title{
         font-size: 2em!important;
@@ -1122,8 +1267,8 @@ input[type=checkbox]{
         top: 2em;
     }
     .political-list ul{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         top: 0;
     }
 
@@ -1161,6 +1306,50 @@ input[type=checkbox]{
         width: 120%;
     }
     .jumbotron-salon{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-cocina{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-dormitorio{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-exterior{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-ofertas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesaSilla{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-sillonesSofas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-camas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mesillasComodas{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-mueblesAux{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-iluminación{
+        height: 45%;
+        width: 120%;
+    }
+    .jumbotron-decoracion{
         height: 45%;
         width: 120%;
     }
@@ -1259,6 +1448,52 @@ input[type=checkbox]{
         height: 45%;
         width: 117%;
     }
+    .jumbotron-cocina{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-dormitorio{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-exterior{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-ofertas{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-mesaSilla{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-sillonesSofas{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-camas{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-mesillasComodas{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-mueblesAux{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-iluminación{
+        height: 45%;
+        width: 110%;
+    }
+    .jumbotron-decoracion{
+        height: 45%;
+        width: 110%;
+    }
+
+
     .jumbo-title{
         font-size: 2.5em!important;
         top: 4em;
@@ -1593,6 +1828,76 @@ input[type=checkbox]{
     }
     #sidebarCollapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+}
+
+
+
+@media (max-height: 510px) {
+    #sidebar {
+        max-height: 510px;
+    }
+    #sidebar .sidebar-header {
+        padding: 20px;
+    }
+    #sidebar .sidebar-header li{
+        font-size: 1.8em;
+        margin-left: 0.1em;
+    }
+    #sidebar ul.components {
+        top: 2.1em;
+        padding: 10px 0;
+    }
+    #sidebar ul li a {
+        padding: 1px;
+        font-size: 0.8em;
+        margin-left: 1.8em;
+    }
+    input[type=search] {
+        left: 20px;
+        width: 180px;
+        height: 20px;
+        font-size: 10px;
+        background-size: 8%;
+        background-position: 150px 4px;
+    }
+    .searchBox{
+        height: 20px;
+        margin-top: -10px!important;
+    }
+    .switch {
+        left:10em !important;
+        top:-1.5em !important;
+        width: 40px;
+        height: 15px;
+        border-radius: 15px;
+    }
+    .on {
+        position: relative;
+        top: 2px;
+        left: -20px;
+        width: 11px;
+        height: 11px;
+    }
+    #login{
+        margin-top: -2em;
+    }
+    .icon{
+        width: 1.1em;
+        height: 1.1em;
+        position: relative;
+        top: -1.5em;
+        left: 11em;
+    }
+    #sidebarCollapse {
+        width: 35px;
+        height: 35px;
+        margin-top: -10px;
+    }
+    #content {
+        height: 510px;
+        overflow: scroll;
     }
 
 }
